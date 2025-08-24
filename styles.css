@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #81c7d8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #3088fc;
+  padding: 20px;
+  color: white;
+}
+
+h1, h2 {
+  margin: 10px 0;
+  color: black;
+}
+
+.imagenes img {
+  width: 750px;               /* Establece el ancho de la imagen al 45% del contenedor padre */
+  margin: 5px;              /* Añade un margen externo de 5px alrededor de la imagen */
+  border-radius: 10px;      /* Redondea las esquinas de la imagen con un radio de 10px */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aplica una sombra suave debajo de la imagen */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la animación al hacer hover */
+  cursor: pointer;          /* Cambia el cursor a una mano al pasar sobre la imagen */
+  object-fit: cover;        /* Asegura que la imagen se recorte para llenar su contenedor sin deformarse */
+}
+
+/* Efecto al pasar el mouse por encima de la imagen */
+.imagenes img:hover {
+  transform: scale(1.05);   /* Agranda la imagen ligeramente al hacer hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Intensifica la sombra al hacer hover */
+}
+
+
+
+.dedicatoria, .galeria {
+  margin: 30px auto;
+  padding: 20px;
+  font-size: 24px;
+  max-width: 700px;
+  background: #F4E1F5;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.teamo, .galeria {
+  margin: 40px auto;              /* Margen superior/inferior de 40px, centrado horizontalmente */
+  padding: 20px;                  /* Espacio interno de 20px alrededor del contenido */
+  max-width: 700px;               /* Ancho máximo del contenedor: no excede 700px */
+  background: #F4E1F5;               /* Fondo blanco */
+  border-radius: 10px;            /* Bordes redondeados de 10px */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+
+  display: flex;                  /* Usa modelo de caja flexible para alinear elementos internos */
+  align-items: center;           /* Centra verticalmente los elementos dentro del contenedor */
+  justify-content: space-between;/* Distribuye los elementos con espacio entre ellos */
+  gap: 20px;                      /* Espacio entre los elementos flexibles */
+  width: 1500px;                  /* Ancho fijo del contenedor (puede sobresalir en pantallas pequeñas) */
+
+  font-size: 18px;                /* Tamaño base de la letra para el texto */
+  font-family: 'Segoe UI', sans-serif; /* Fuente moderna y legible */
+  color: #333;                    /* Color del texto: gris oscuro para buena lectura */
+}
+
+/* Estilos para imágenes dentro del contenedor */
+.teamo img, .galeria img {
+  width: 350px;        /* Ancho fijo de 350px para las imágenes */
+  height: auto;        /* Mantiene proporción de la imagen */
+  border-radius: 8px;  /* Bordes redondeados */
+}
+
+/* Estilos para títulos dentro del contenedor */
+.teamo h1, .galeria h1 {
+  font-size: 24px;     /* Tamaño grande para el título */
+  font-weight: bold;   /* Negrita para destacar */
+  margin-bottom: 10px; /* Espacio debajo del título */
+  color: #000000;      /* Color verde para resaltar */
+}
+
+/* Estilos para párrafos dentro del contenedor */
+.teamo p, .galeria p {
+  font-size: 18px;     /* Tamaño del texto del párrafo */
+  line-height: 1.6;    /* Espaciado entre líneas para mejor lectura */
+  margin: 0;           /* Elimina márgenes por defecto */
+  align-items: flex-start; /* Alinea los elementos al inicio del eje vertical */
+}
+
+.texto p {
+  font-family: 'Arial', sans-serif; /* Cambia la fuente */
+  font-size: 18px; /* Tamaño del texto */
+  color: black; /* Color del texto */
+  text-align: justify; /* Alineación del texto */
+  text-transform: capitalize; /* Capitaliza cada palabra */
+  line-height: 1.6; /* Espaciado entre líneas */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra del texto */
+}
+
+
+
+button {
+  background-color: #C8A2C8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff4d4d;
+}
+
+#mensaje {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ff3333;
+}
+
+.oculto {
+  display: none;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #C8A2C8;
+  color: white;
+}
+
+/* 💬 Estilos para el contenedor del mensaje */
+.mensaje {
+  margin-bottom: 30px;            /* Espacio debajo de cada mensaje */
+  padding: 15px;                  /* Espacio interno alrededor del contenido */
+  padding-bottom: 100px;           /* 🔽 Espacio extra abajo para que el corazón no se superponga */
+  background-color: #f9f9f9;      /* Fondo gris claro para destacar el mensaje */
+  border-radius: 8px;             /* Bordes redondeados suaves */
+  position: relative;             /* Permite posicionar el corazón dentro del contenedor */
+  font-family: Arial, sans-serif;/* Fuente legible y moderna */
+}
+
+/* ❤️ Estilos para el ícono de corazón */
+.corazon {
+  font-size: 40px;                /* Tamaño del corazón */
+  color: #ccc;                    /* Color gris para corazón vacío */
+  cursor: pointer;               /* Cambia el cursor a mano al pasar por encima */
+  transition: color 0.3s ease;    /* Suaviza el cambio de color al hacer clic */
+  position: absolute;            /* Posiciona el corazón dentro del contenedor */
+  bottom: 10px;                  /* Lo coloca 10px desde abajo */
+  right: -10px;                   /* Lo coloca 10px desde la derecha */
+}
+
+/* 💗 Estilo cuando el corazón está activo (like dado) */
+.corazon.activo {
+  color: #000000;                 /* Color rosa/rojo para corazón lleno */
+}
+
+
